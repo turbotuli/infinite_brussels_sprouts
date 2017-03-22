@@ -19,10 +19,11 @@
         </li>
       <% end %>
     </ul>
-
-    <% unless @tweets.empty? %>
+    <noscript>
+      <% unless @tweets.empty? %>
       <a href="/tweets?page=<%= @page + 1 %>" class="more-sprouts">More sprouts please...</a>
-    <% end %>
+      <% end %>
+    </noscript>
 
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/what-input/2.1.1/what-input.js"></script>
